@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,147 @@
 </head>
 
 <body>
+    
+    <header>
+        <h1><a href="index.html">Habit Tracker</a></h1>
+        <p>Track your habits and stay motivated! (Phase 1: content only) | 
+            <a href="login-singup.html">Login / Sign Up</a> |
+            <a href="settings.html">Settings</a>
+        </p>
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="rate-us.html">Rate Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <hr><hr>
+
+    <main>
+        <h2>Quick Actions</h2>
+        <a href="new-habit.html">Create New Habit</a> |  
+        <a href="progress.html">View your progress</a> | 
+        <br><br>
+        <hr>
+
+        <h2><time datetime="2026-01-28">January | 28 | 2026</time></h2>
+        <h2>Wednesday</h2>
+        <p>-- / 3 Habits Completed</p>
+        <hr><hr>
+        <section>
+            <dl>
+                <dt><h3>Drink Water</h3></dt>
+                    <dd>
+                        <p>Make sure to drink enough water (cup size 240ml)</p>
+                        <label for="water-habit">Today's Water Intake:</label>
+                        <input name="water-habit" id="water-habit" type="number" min="0" max="100" value="0">/8 in cups
+                    </dd>
+                    <hr>
+
+                <dt><h3>Work Out</h3></dt>
+                    <dd>
+                        <p>Dont forget to workout</p>
+                        <label for="workout-habit">Worked Out Today: </label>
+                        <input type="checkbox" name="workout-habit" id="workout-habit">
+                    </dd>
+                    <hr>
+
+                <dt><h3>Reading</h3></dt>
+                    <dd>
+                        <p>Currently reading: ---</p>
+                        <label for="reading-habit">Read 10 Pages:</label>
+                        <input type="checkbox" name="reading-habit" id="reading-habit">
+                    </dd>
+                    <hr>
+                
+                <dt><h3>Bonus Check in!</h3></dt>
+                    <dd>
+                        <p>How are you feeling today (select the best fitting image)</p>
+                        <label for="mood">Choose: </label>
+                        <input type="radio" name="mood" id="mood-angry" value="angry">😡
+                        <input type="radio" name="mood" id="mood-upset" value="upset">😠
+                        <input type="radio" name="mood" id="mood-neutral" value="neutral">😐
+                        <input type="radio" name="mood" id="mood-happy" value="happy">☺️
+                        <input type="radio" name="mood" id="mood-excited" value="excited">😃
+                        <br><br>
+                        <label for="stress-meter">How stressed were you?</label>
+                        <input type="range" name="stress-meter" id="stress-meter" min="0" max="100" value="50">
+                    </dd>
+            </dl>
+        </section>
+        
+        <hr><hr>
+        <aside>
+            <table>
+                <caption>
+                    <a href="progress.html"><h2>Your Weekly Progress</h2></a>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Habit</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th> 
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Drink Water</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Work Out</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </main>
+
+    <footer>
+        <hr><hr>
+        <p>
+            Habit Tracker - Web Centric Progaming Group Project - Phase 1
+        </p>
+
+        <p>&copy; 2026 Habit Tracker. All rights reserved.</p>
+
+        <nav>
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </footer>
 
 </body>
-
 </html>
