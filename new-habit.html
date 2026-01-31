@@ -29,7 +29,117 @@
   </header>
 
     <main>
+        <h2>Create a New Habit</h2>
+        <p>Add a habit you want to track. Fill in the details below.</p>
+        <hr />
 
+        <form action="#" method="get">
+            <section>
+                <h3>Basic Information</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="habit-name">Habit name:</label></td>
+                            <td>
+                                <input type="text" name="habit-name" id="habit-name" size="30" placeholder="e.g. Drink Water" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="habit-desc">Description (optional):</label></td>
+                            <td>
+                                <textarea name="habit-desc" id="habit-desc" cols="40" rows="3" placeholder="A short description or reminder for this habit."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="habit-category">Category:</label></td>
+                            <td>
+                                <select name="habit-category" id="habit-category">
+                                    <option value="health">Health</option>
+                                    <option value="fitness">Fitness</option>
+                                    <option value="learning">Learning</option>
+                                    <option value="mindfulness">Mindfulness</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br />
+
+            <section>
+                <h3>Goal &amp; Frequency</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="habit-frequency">How often?</label></td>
+                            <td>
+                                <select name="habit-frequency" id="habit-frequency">
+                                    <option value="daily">Daily</option>
+                                    <option value="weekdays">Weekdays only</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="habit-goal">Goal (optional):</label></td>
+                            <td>
+                                <input type="text" name="habit-goal" id="habit-goal" size="30" placeholder="e.g. 8 glasses, 10 pages" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="habit-unit">Unit (optional):</label></td>
+                            <td>
+                                <input type="text" name="habit-unit" id="habit-unit" size="20" placeholder="e.g. cups, pages, minutes" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br />
+
+            <section>
+                <h3>Reminder (optional)</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="reminder-time">Remind me at:</label></td>
+                            <td>
+                                <input type="time" name="reminder-time" id="reminder-time" value="09:00" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>On days:</td>
+                            <td>
+                                <input type="checkbox" name="reminder-mon" id="reminder-mon" />
+                                <label for="reminder-mon">Mon</label>
+                                <input type="checkbox" name="reminder-tue" id="reminder-tue" />
+                                <label for="reminder-tue">Tue</label>
+                                <input type="checkbox" name="reminder-wed" id="reminder-wed" />
+                                <label for="reminder-wed">Wed</label>
+                                <input type="checkbox" name="reminder-thu" id="reminder-thu" />
+                                <label for="reminder-thu">Thu</label>
+                                <input type="checkbox" name="reminder-fri" id="reminder-fri" />
+                                <label for="reminder-fri">Fri</label>
+                                <input type="checkbox" name="reminder-sat" id="reminder-sat" />
+                                <label for="reminder-sat">Sat</label>
+                                <input type="checkbox" name="reminder-sun" id="reminder-sun" />
+                                <label for="reminder-sun">Sun</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Create Habit" />
+                            </td>
+                            <td>
+                                <input type="reset" value="Clear Form" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </form>
     </main>
 
     <footer>
